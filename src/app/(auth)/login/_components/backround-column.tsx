@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BackgroundCard } from "./backround-card";
-import columns from "@/utils";
+import { ColumnProps } from "@/types";
 
-export function BackgroundColumn({ items, duration }: (typeof columns)[0]) {
+export function BackgroundColumn({ items, duration }: ColumnProps) {
   return (
     <motion.div
       initial={{ y: 0 }}

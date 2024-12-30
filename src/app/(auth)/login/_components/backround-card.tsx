@@ -2,13 +2,9 @@ import React from "react";
 
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import columns from "@/utils";
+import { Item } from "@/types";
 
-export function BackgroundCard({
-  item,
-}: {
-  item: (typeof columns)[0]["items"][0];
-}) {
+export function BackgroundCard({ item }: { item: Item }) {
   return (
     <div
       className={cn(
