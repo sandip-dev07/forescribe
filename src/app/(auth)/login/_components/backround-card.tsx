@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { columns } from "../page";
+import columns from "@/utils";
 
 export function BackgroundCard({
   item,

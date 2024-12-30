@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BackgroundCard } from "./backround-card";
-import { columns } from "../page";
+import columns from "@/utils";
 
 export function BackgroundColumn({ items, duration }: (typeof columns)[0]) {
   return (
