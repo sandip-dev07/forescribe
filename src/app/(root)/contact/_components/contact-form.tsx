@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 
 export function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,13 +33,16 @@ export function ContactForm() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-8">
           <Label htmlFor="message">Message</Label>
-          <Input
+          <Textarea
             id="message"
             placeholder="Please provide details about your inquiry..."
           />
         </LabelInputContainer>
 
-        <Button size={"sm"} className="bg-[#8B3DFF] hover:bg-[#8B3DFF]/90 w-full">
+        <Button
+          size={"sm"}
+          className="bg-[#8B3DFF] hover:bg-[#8B3DFF]/90 w-full"
+        >
           Send Message &rarr;
         </Button>
 
