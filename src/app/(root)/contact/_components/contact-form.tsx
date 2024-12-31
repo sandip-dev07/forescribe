@@ -4,6 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -37,12 +38,9 @@ export function ContactForm() {
           />
         </LabelInputContainer>
 
-        <button
-          className="bg-gradient-to-br relative group/btn from-violet-500 dark:from-violet-900 dark:to-violet-900 to-neutral-600 block dark:bg-violet-800 w-full text-white rounded-md h-10 font-medium "
-          type="submit"
-        >
+        <Button size={"sm"} className="bg-[#8B3DFF] hover:bg-[#8B3DFF]/90 w-full">
           Send Message &rarr;
-        </button>
+        </Button>
 
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
       </form>
