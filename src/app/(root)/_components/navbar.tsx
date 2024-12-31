@@ -16,7 +16,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <div className="h-16 fixed top-4 left-1/2 -translate-x-1/2 w-[95%] sm:w-[75%] rounded-lg border flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <div className="h-16 fixed top-4 left-1/2 -translate-x-1/2 w-[95%] sm:w-[75%] rounded-lg border flex items-center justify-between px-4 sm:px-6 lg:px-8 bg-white">
       <AppLogo />
       <div className="flex items-center gap-4">
         {navLinks.map((link) => (
